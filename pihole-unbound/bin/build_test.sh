@@ -7,7 +7,7 @@ cd "$parent_path"
 #
 
 # Test build for multi-platform
-docker buildx build --platform linux/arm/v7,linux/arm64/v8,linux/amd64 -t jdionne/pihole-unbound:test .. 
+docker buildx build --platform linux/arm/v7,linux/arm64/v8,linux/amd64 -t jd10nn3/pihole-unbound:test .. 
 
 # Build for current platform (allow us to use it locally on Docker Desktop)
-docker build -t jdionne/pihole-unbound:test ..
+docker build -t jd10nn3/pihole-unbound:test ..
