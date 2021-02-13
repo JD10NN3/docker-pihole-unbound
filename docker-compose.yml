@@ -3,7 +3,7 @@ version: "2"
 services:
   pihole:
     container_name: pihole
-    image: jdionne/pihole-unbound:${VERSION}
+    image: jd10nn3/pihole-unbound:${VERSION}
     hostname: pihole
     domainname: pihole.local
     ports:
