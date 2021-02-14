@@ -31,4 +31,6 @@ services:
     restart: unless-stopped
 volumes:
   etc_pihole-unbound:
+    driver: local
   etc_pihole-unbound_dnsmasq:
+    driver: local
