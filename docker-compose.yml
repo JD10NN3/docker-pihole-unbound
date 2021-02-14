@@ -16,10 +16,10 @@ services:
       ADMIN_EMAIL: ${ADMIN_EMAIL}
       TZ: ${TZ}
       WEBPASSWORD: ${WEBPASSWORD}
-      DNSSEC: "true"
       # Values used to communicate with the Unbound server
       DNS1: 127.0.0.1#5335
       DNS2: 127.0.0.1#5335
+      DNSSEC: "false" # Set to false since Unbound do his own poutine
     # Volumes store your data between container upgrades
     volumes:
       - etc_pihole-unbound:/etc/pihole:rw
