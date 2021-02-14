@@ -28,6 +28,7 @@ services:
     #   https://github.com/pi-hole/docker-pi-hole#note-on-capabilities
     cap_add:
       - NET_ADMIN
+    network_mode: host # Ease usage of IPv6 inside Docker
     restart: unless-stopped
 volumes:
   etc_pihole-unbound:
