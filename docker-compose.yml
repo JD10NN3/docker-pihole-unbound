@@ -32,6 +32,6 @@ services:
     restart: unless-stopped
 volumes:
   etc_pihole-unbound:
-    driver: local
+    driver: local # Avoid Portainer to duplicate volume
   etc_pihole-unbound_dnsmasq:
-    driver: local
+    driver: local # Avoid Portainer to duplicate volume
